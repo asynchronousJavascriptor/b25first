@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#nav h2{
+    font-weight: 800;
+}
+
+#hero{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#hero h1{
+    font-weight: 700;
+    letter-spacing: -2px;
+    font-size: 7vw;
+    line-height: .9;
+}
+
+#hero p{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#centeredelems{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#centeredelems input{
+    width: 18vw;
+    border-radius: 100px;
+    background-color: #f3f3f3;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px 22px;
+}
+
+#centeredelems input::placeholder{
+    color: #afafaf;
+}
+
+#centeredelems button{
+    padding: 12px 32px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    background: linear-gradient(to bottom right, rgb(137, 167, 255), rgb(54, 95, 219));
+    color: #fff;
+    border-radius: 100px;
+}
+
+#mobile{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 420px;
+}
+
+#mobile img{
+    position: relative;
+    z-index: 999;
+    width: 100%;
+}
+
+#screen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 89%;
+    height: 94%;
+    border-radius: 55px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#screen img{
+    position: absolute;
+    width: 100%;
+    animation: a 1s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+
+#screen img:nth-child(2){
+    left: 100%;
+}
+
+#circles{
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 150px;
+}
+
+#circles::-webkit-scrollbar{
+    display: none;
+}
+
+.circle{
+    flex-shrink: 0;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgb(234, 234, 234);
+}
+
+#dets{
+    padding-top: 400px;
+    padding-bottom: 150px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#dets h1{
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+#dets h1:nth-child(3){
+    color: rgb(76, 148, 255);
+}
+
+#section{
+    display: flex;
+    width: 100%;
+    padding: 40px 20px;
+    margin-bottom: 200px;
+}
+
+#sectionleft{
+    width: 55%;
+    background-color: rgb(236, 236, 236);
+}
+
+#sectionright{
+    width: 45%;
+    padding: 100px 30px;
+}
+
+#sectionright h1{
+    font-size: 4vw;
+    line-height: 1;
+}
+
+#sectionright p{
+    font-size: 17px;
+    font-weight: 700;
+    width: 75%;
+    margin-top: 20px;
+}
+
+.rightalign{
+    flex-direction: row-reverse;
+}
+
+#footer{
+    width: 100%;
+    background-color: rgb(16, 19, 39);
+    padding: 40px 30px;
+    color: #fff;
+    text-align: center;
+}
+
+#footer h1{
+    font-size: 60px;
+}
+
+#footer input{
+    padding: 10px 32px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+}
+
+#footer #inputdiv{
+    margin-top: 40px;
+}
+
+#footer input::placeholder{
+    opacity: .4;
+}
+
+#footer button{
+    padding: 10px 32px;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+#footer #links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+#footer a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer small{
+    opacity: .4;
+    font-weight: 600;
+}
+
+@keyframes a{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
